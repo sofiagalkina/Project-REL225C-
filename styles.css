@@ -21,13 +21,6 @@ body {
     border-bottom: 2px solid #a2a9b1;
 }
 
-/*
-.top-container{
-    display: flex;
-    justify-content: space-between;
-}
-*/
-
 #header h1 {
     font-size: 2.5em;
     color: #222;
@@ -45,6 +38,8 @@ body {
     padding: 15px;
     margin-bottom: 20px;
     width: 250px;
+    float: left; /* Float the table of contents to the left */
+    margin-right: 20px; /* Add space between toc and main content */
 }
 
 #toc h2 {
@@ -71,6 +66,7 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    overflow: auto; /* Clear floating elements */
 }
 
 main h2 {
@@ -88,6 +84,15 @@ main ul {
     padding-left: 40px;
 }
 
+/* Image styling */
+.right-img {
+    float: right;
+    margin: 10px;
+    border: 1px solid #d3d3d3;
+    width: 300px;
+    height: auto;
+}
+
 /* Footer styling */
 footer {
     text-align: center;
@@ -103,12 +108,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-
-.temple{
-    height: 40rem;
-    position: relative;
-    top: -15rem;
-    left: 40rem;
 }
